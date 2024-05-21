@@ -1,0 +1,397 @@
+/* imports */
+@import url(./all.css);
+
+/*custom font*/
+@font-face {
+	font-family: CF Revolution;
+	src: url('../fonts/CfRevolutionRegular-AEKM.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: normal;
+}
+
+@font-face {
+	font-family: glitch;
+	src: url('../fonts/MadHackerItalic-8EOz.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: normal;
+}
+
+@font-face {
+	font-family: g aseman;
+	src: url('../fonts/g aseman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: normal;
+}
+
+@font-face {
+	font-family: vazirmatn;
+	src: url('../fonts/Vazirmatn-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: normal;
+}
+
+@font-face {
+	font-family: link;
+	src: url('../fonts/A.Afsaneh.Font.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: normal;
+}
+
+@font-face {
+	font-family: nabigha;
+	src: url('../fonts/Mj_Nabigha\ Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: normal;
+}
+
+/*Normalize*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: right;
+	direction: rtl;
+}
+
+body {
+	font-family: CF Revolution, sans-serif !important;
+}
+
+.float_hack {
+	display: block;
+	clear: both;
+}
+
+/*Header style*/
+header {
+	background-image: url("../assets/NFT.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 20px 13px;
+	width: 100%;
+	border: 2px solid black;
+	border-bottom: 3px solid #7c21b0;
+}
+
+#header_List a:hover {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: rgb(52, 227, 236);
+	transition: 300ms;
+	text-shadow:
+		0 0 4px rgba(217, 103, 252, 0.888),
+		0 0 11px rgba(217, 103, 252, 0.888),
+		0 0 19px rgba(217, 103, 252, 0.888),
+		0 0 40px rgba(217, 103, 252, 0.888),
+		0 0 80px rgba(217, 103, 252, 0.888),
+		0 0 90px rgba(217, 103, 252, 0.888),
+		0 0 100px rgba(217, 103, 252, 0.888),
+		0 0 150px rgba(217, 103, 252, 0.888);
+}
+
+#header_list {
+	float: right;
+	margin-top: 50px;
+}
+
+ul#header_list li {
+	display: inline-block;
+	margin-left: 22px;
+}
+
+#header_list a {
+	color: rgb(237, 11, 222);
+	text-decoration: none;
+}
+
+#header_img {
+	width: 115px;
+	float: right;
+	margin-left: 14px;
+	margin-top: 19px;
+	filter: drop-shadow(1px 0px 30px #f406b9);
+}
+
+#header_img:hover {
+	filter: drop-shadow(0px 0px 50px rgb(10, 211, 238));
+	transition: 600ms;
+}
+
+/* Main style  */
+#main {
+	margin-bottom: 3px;
+	height: 1533px;
+}
+
+/* article styles  */
+main {
+	background-image: url('../assets/wavecut.png');
+	background-color: #040930;
+	width: 70%;
+	float: right;
+	padding: 15px 20px 15px 20px;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	main {
+		width: 100%;
+	}
+}
+
+main .article {
+	direction: rtl;
+	background-color: #2A2F4F;
+	border-radius: 20px 140px 30px 140px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+/* articles styles*/
+main .article h2::before {
+	content: url('../assets/glitch\ 2.png');
+	margin: 10px 0px 0px 10px;
+	float: right;
+}
+
+main .article h2 {
+	font-family: vazirmatn;
+	font-size: 32px;
+	color: white;
+	margin-right: 50px;
+	padding-bottom: 7px;
+	margin-bottom: .8em;
+	border-bottom: 2px dotted white;
+}
+
+main .article .desc {
+	overflow-y: auto;
+	height: 280px;
+}
+
+main .article_image {
+	position: relative;
+	height: 300px;
+}
+
+main .article_image div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+main .article ul {
+	margin-top: 30px;
+}
+
+main .article ul li {
+	font-family: vazirmatn;
+	width: 33.33%;
+	float: right;
+	color: white;
+	list-style-type: none;
+	list-style-image: url('../assets/glitch.png');
+	list-style-position: inside;
+}
+
+main .article ul li:nth-child(3) a:hover {
+	animation: glow 0.5s ease-in-out infinite alternate;
+	color: rgb(52, 227, 236);
+	transition: 300ms;
+	text-shadow:
+		0 0 4px rgba(217, 103, 252, 0.888),
+		0 0 19px rgba(217, 103, 252, 0.888),
+		0 0 100px rgba(217, 103, 252, 0.888),
+		0 0 150px rgba(217, 103, 252, 0.888);
+}
+
+main .article ul li:nth-child(3) a {
+	color: rgb(237, 11, 222);
+	font-family: link;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+main .article ul li:nth-child(3) a:active {
+	color: #7c21b0;
+}
+
+main .article p {
+	font-family: g aseman;
+	color: white;
+	text-align: right;
+	font-size: 26px;
+	line-height: 31px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+
+/* Paginate Styles */
+#paginate_wrapper {
+	text-align: center;
+}
+
+#paginate_wrapper #paginate {
+	display: inline-block;
+	background-color: #2A2F4F;
+	border-radius: 30px 30px 30px 30px;
+	padding: 5px 10px;
+	margin: 20px auto 15px auto;
+}
+
+#paginate_wrapper #paginate ul {
+	display: inline-block;
+}
+
+#paginate_wrapper #paginate ul li {
+	display: inline-block;
+}
+
+#paginate_wrapper #paginate ul li a {
+	color: white;
+	text-decoration: none;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+#paginate_wrapper #paginate ul li a:hover {
+	animation: glow 0.5s ease-in-out infinite alternate;
+	color: rgb(52, 227, 236);
+	transition: 300ms;
+	text-shadow:
+		0 0 4px rgba(217, 103, 252, 0.888),
+		0 0 19px rgba(217, 103, 252, 0.888),
+		0 0 100px rgba(217, 103, 252, 0.888),
+		0 0 150px rgba(217, 103, 252, 0.888);
+}
+
+/* aside styles */
+aside {
+	background-image: url('../assets/lined-paper.png');
+	width: 30%;
+	float: left;
+	height: 1537px;
+	background-color: #073950;
+	border-right: 3px solid #7c21b0;
+}
+
+@media (max-width: 768px) {
+	aside {
+		width: 100%;
+	}
+}
+
+#aside_background {
+	background-color: rgba(91, 142, 164, 0.60);
+	border-radius: 20px;
+	margin: 15px 10px 0px 10px;
+	padding: 5px 10px 10px 20px;
+	height: auto;
+}
+
+aside h3 {
+	margin: 15px 12px 0px 0px;
+	position: relative;
+	top: 10px;
+	right: 5px;
+	border-bottom: 3px dashed white;
+	font-family: vazirmatn;
+	color: rgb(217, 103, 252);
+}
+
+aside ul {
+	font-family: nabigha;
+	font-size: 17px;
+	margin: 10px 12px 0px 0px;
+	position: relative;
+	top: 10px;
+	list-style-position: inside;
+}
+
+aside ul li {
+	margin-bottom: 4px;
+	list-style: none;
+}
+
+aside ul li a {
+	text-decoration: none;
+	color: orange;
+}
+
+@keyframes side_color {
+	from {
+		color: white;
+	}
+
+	to {
+		color: rgb(52, 227, 236);
+	}
+}
+
+aside ul li a:hover {
+	animation: side_color 1s infinite;
+	text-shadow:
+		0 0 4px rgba(124, 33, 176, 0.888),
+		0 0 11px rgba(124, 33, 176, 0.888),
+		0 0 19px rgba(124, 33, 176, 0.888),
+		0 0 40px rgba(255, 255, 255, 0.888),
+		0 0 80px rgba(255, 255, 255, 0.888),
+		0 0 90px rgba(255, 255, 255, 0.888),
+		0 0 100px rgba(255, 255, 255, 0.888),
+		0 0 150px rgba(255, 255, 255, 0.888);
+}
+
+aside .side_content {
+	margin-left: 30px;
+}
+
+/* footer styles */
+footer {
+	background-color: gray;
+	padding: 5px;
+	text-align: center;
+	font-family: glitch;
+}
+
+@keyframes changeColor {
+	0% {
+		color: black;
+	}
+
+	20% {
+		color: aqua;
+	}
+
+	40% {
+		color: white;
+	}
+
+	60% {
+		color: orange;
+	}
+
+	80% {
+		color: #f406b9;
+	}
+
+	100% {
+		color: #7c21b0;
+	}
+}
+
+footer span {
+	animation-name: changeColor;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}

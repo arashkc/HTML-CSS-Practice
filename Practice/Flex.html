@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Grid</title>
+    <link rel="stylesheet" type="text/css" href="./style/custom.css">
+    <link rel="stylesheet" type="text/css" href="./style/all.css">
+    <style>
+        .empty-space {
+            background-color: silver;
+            height: 15%;
+        }
+
+        .offer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: cornsilk;
+            height: 70%;
+            align-content: center;
+            font-family: vazirmatn;
+            align-items: center;
+        }
+
+
+        span i {
+            font-size: 50px;
+            margin-right: 42px;
+
+        }
+
+        @media (max-width:700px) {
+            .offer {
+                flex-direction: column;
+            }
+        }
+
+        p {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <section id="content">
+            <div id="changes">
+                <div class="empty-space"></div>
+                <div class="offer">
+                    <!-- 1 -->
+                    <div>
+                        <span><i class="fa-duotone fa-circle-star"></i></span>
+                        <h3>تخفیف های عیدانه</h3>
+                        <p>فقط تا فردا</p>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <span><i class="fa-duotone fa-circle-star"></i></span>
+                        <h3>تخفیف های عیدانه</h3>
+                        <p>فقط تا فردا</p>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <span><i class="fa-duotone fa-circle-star"></i></span>
+                        <h3>تخفیف های عیدانه</h3>
+                        <p>فقط تا فردا</p>
+                    </div>
+                </div>
+                <div class="empty-space"></div>
+        </section>
+    </div>
+</body>
+
+
+</html>
